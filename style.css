@@ -1,3 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin-top: 20px;
+}
+
+main {
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 50px auto;
+  display: flex;
+  border: 1px solid black;
+}
+
+.section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+
+.section__right {
+  width: 60%;
+  align-items: flex-start;
+}
+
+.section__left {
+  width: 40%;
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.section__title {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.avatar {
+  width: 60%;
+  border: 1px solid white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.education {
+  width: 100%;
+  border: 1px solid black;
+
+  padding: 10px;
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.education__item {
+  display: flex;
+  gap: 50px;
+}
+
+.education__list--left {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.education__list--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__list {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills__item {
+  display: flex;
+  gap: 20px;
+}
+
+.england {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  width: 100%;
+}
+
+.footer__container {
+  width: 100%;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section__left {
+    width: 100%;
+  }
+
+  .section__right {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

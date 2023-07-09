@@ -38,6 +38,7 @@ main {
   margin: 50px auto;
   display: flex;
   border: 1px solid black;
+  overflow: auto;
 }
 
 .section {
@@ -84,7 +85,6 @@ main {
   align-items: center;
   gap: 20px;
 }
-
 
 .section__header {
   display: flex;
